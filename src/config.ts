@@ -13,7 +13,7 @@ export const config = {
     },
     about: {
         title: "About Me",
-        description: "I am a Python and Full-Stack Developer focused on AI-driven systems, real-time applications, and clean backend architecture. I am pursuing an MCA at RGPV University (2025 - present, expected 2027) and completed my BCA at ITM Gwalior (2022 - 2025, CGPA 7.42). I enjoy building multi-agent workflows, network analyzers, and collaborative AI tools using FastAPI, React, WebSockets, and LLM APIs. I am seeking a Software Engineer or Backend Developer role in a product-based company."
+        description: "I am a Python and Full-Stack Developer focused on AI-driven systems, real-time applications, and clean backend architecture. I am pursuing an MCA at RGPV University (2025 - present, expected 2027) and completed my BCA at ITM Gwalior (2022 - 2025, CGPA 7.42). I enjoy building multi-agent workflows, network analyzers, and collaborative AI tools using FastAPI, React, WebSockets, and LLM APIs. I am seeking a Software Engineer or Full-Stack Developer role in a product-based company."
     },
     projects: [
         {
@@ -39,6 +39,14 @@ export const config = {
             technologies: "React, FastAPI, Socket.IO, Supabase, Redis, Fabric.js, Groq API",
             image: "/images/project-3.webp",
             description: "Created a real-time collaborative system design whiteboard with sub-1s sync using Socket.IO and Redis. Added AI feedback on architecture diagrams and saved boards to Supabase Postgres."
+        },
+        {
+            id: 4,
+            title: "TeamFlow",
+            category: "Project Management",
+            technologies: "React.js, JavaScript, JWT, REST API, CoreUI",
+            image: "/images/project-4.webp",
+            description: "A full-stack project management application featuring a dynamic Kanban board, interactive dashboard, and JWT authentication for secure team collaboration."
         }
     ],
     contact: {
