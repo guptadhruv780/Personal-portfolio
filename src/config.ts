@@ -40,7 +40,8 @@ export const config = {
             category: "Collaborative AI",
             technologies: "React, FastAPI, Socket.IO, Supabase, Redis, Fabric.js, Groq API",
             image: "/images/project-3.png",
-            description: "Created a real-time collaborative system design whiteboard with sub-1s sync using Socket.IO and Redis. Added AI feedback on architecture diagrams and saved boards to Supabase Postgres."
+            description: "Created a real-time collaborative system design whiteboard with sub-1s sync using Socket.IO and Redis. Added AI feedback on architecture diagrams and saved boards to Supabase Postgres.",
+            link: "https://smartarch-board-1.onrender.com/"
         },
         {
             id: 4,
