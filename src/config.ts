@@ -48,7 +48,7 @@ export const config = {
             technologies: "React.js, JavaScript, JWT, REST API, CoreUI",
             image: "/images/project-4.png",
             description: "A full-stack project management application featuring a dynamic Kanban board, interactive dashboard, and JWT authentication for secure team collaboration.",
-            link: ""
+            link: "https://project-management-system-production-96d2.up.railway.app/#/login"
         },
         {
             id: 5,
