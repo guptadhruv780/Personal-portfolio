@@ -38,7 +38,7 @@
 
 .what-box-in {
   flex-direction: column;
-  height: 500px;
+  height: 600px;
   margin-left: 200px;
   position: relative;
   display: flex;
@@ -223,7 +223,7 @@
 }
 
 .what-border2 svg {
-  height: 500px;
+  height: 100%;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
@@ -282,7 +282,7 @@
   }
 
   .what-box-in {
-    height: 400px;
+    height: 500px;
   }
 
   .what-content h3 {
@@ -332,7 +332,7 @@
   }
 
   .what-box-in {
-    height: 500px;
+    height: 600px;
     margin-left: -50px;
   }
 
@@ -390,7 +390,7 @@
 
   .what-box-in {
     margin-left: 0px;
-    height: 450px;
+    height: 550px;
   }
 
   .what-content h5,
