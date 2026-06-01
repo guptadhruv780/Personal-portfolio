@@ -99,6 +99,30 @@
   width: 90%;
 }
 
+.work-live-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 1px solid var(--accentColor);
+  color: var(--accentColor);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.work-live-link-btn:hover {
+  background-color: var(--accentColor);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(194, 164, 255, 0.4);
+}
+
 .work-image {
   display: flex;
   width: 100%;
