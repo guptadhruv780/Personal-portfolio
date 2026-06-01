@@ -22,7 +22,8 @@ export const config = {
             category: "AI Automation",
             technologies: "Python, LangGraph, FastAPI, WebSockets, React, Docker",
             image: "/images/project-1.png",
-            description: "Built an AI system that reads GitHub issues, writes code fixes, runs tests in a Docker sandbox, and opens a pull request with no manual steps. Includes a self-correcting loop that analyzes test failures and retries fixes with LangGraph."
+            description: "Built an AI system that reads GitHub issues, writes code fixes, runs tests in a Docker sandbox, and opens a pull request with no manual steps. Includes a self-correcting loop that analyzes test failures and retries fixes with LangGraph.",
+            link: "https://huggingface.co/spaces/muggledeveloper/AutoPR-frontend"
         },
         {
             id: 2,
