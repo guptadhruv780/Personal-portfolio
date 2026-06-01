@@ -21,7 +21,7 @@ export const config = {
             title: "Multi-Agent Orchestration System",
             category: "AI Automation",
             technologies: "Python, LangGraph, FastAPI, WebSockets, React, Docker",
-            image: "/images/project-1.webp",
+            image: "/images/project-1.png",
             description: "Built an AI system that reads GitHub issues, writes code fixes, runs tests in a Docker sandbox, and opens a pull request with no manual steps. Includes a self-correcting loop that analyzes test failures and retries fixes with LangGraph."
         },
         {
@@ -29,7 +29,7 @@ export const config = {
             title: "DPI Engine - Network Traffic Analyzer",
             category: "Network Monitoring",
             technologies: "Python, FastAPI, Scapy, WebSockets, Vanilla JS",
-            image: "/images/project-2.webp",
+            image: "/images/project-2.png",
             description: "Built a packet inspection tool that reads .pcap files and identifies application traffic without decrypting it. Added a live dashboard streaming packet data under 1s latency and anomaly detection for traffic spikes."
         },
         {
@@ -37,7 +37,7 @@ export const config = {
             title: "SmartArch Board",
             category: "Collaborative AI",
             technologies: "React, FastAPI, Socket.IO, Supabase, Redis, Fabric.js, Groq API",
-            image: "/images/project-3.webp",
+            image: "/images/project-3.png",
             description: "Created a real-time collaborative system design whiteboard with sub-1s sync using Socket.IO and Redis. Added AI feedback on architecture diagrams and saved boards to Supabase Postgres."
         },
         {
@@ -45,8 +45,18 @@ export const config = {
             title: "TeamFlow",
             category: "Project Management",
             technologies: "React.js, JavaScript, JWT, REST API, CoreUI",
-            image: "/images/project-4.webp",
-            description: "A full-stack project management application featuring a dynamic Kanban board, interactive dashboard, and JWT authentication for secure team collaboration."
+            image: "/images/project-4.png",
+            description: "A full-stack project management application featuring a dynamic Kanban board, interactive dashboard, and JWT authentication for secure team collaboration.",
+            link: ""
+        },
+        {
+            id: 5,
+            title: "Navgrah Mandir Dabra",
+            category: "Web Development",
+            technologies: "Frontend, UI/UX, Netlify",
+            image: "/images/project-5.png",
+            description: "Developed the official trust website for Navgrah Mandir, Dabra. Features the founder's vision, temple details, and a serene digital presence for the local community.",
+            link: "https://navgrahmandirdabra.netlify.app"
         }
     ],
     contact: {
