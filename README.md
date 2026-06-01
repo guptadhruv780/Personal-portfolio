@@ -1,22 +1,19 @@
-# My Portfolio Wesbite by @red1-for-hek - Overview 🚀
-Here is my 3d portfolio website. I am a developer/programmer/coder. You can use it as portfolio template.
-this contain AI, Machine Learning, Advance chess playing model too. Made by Python, HTML, CSS, JS, TS, React etc.
-If you are copying this code or forking this repo, please give a credit of my name :(
+# Dhruv Gupta - Personal Portfolio
 
-## Instructions 🛠️
+Welcome to my personal 3D portfolio website! I am a Python & Full-Stack Developer.
 
-Go to www.redoyanulhaque.me/ and rate it :)
+## Tech Stack
+- React & TypeScript
+- Vite
+- Three.js & WebGL
+- GSAP for Animations
 
-**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
-
-- [Protfolio-Preview](https://www.redoyanulhaque.me/)
+## Run Locally
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
 
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-<div>  <!-- ☕ BUY ME A COFFEE -->
-  <a href="https://buymeacoffee.com/redoyanul1y" target="_blank">
-    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"/>
-  </a>
-</div>
