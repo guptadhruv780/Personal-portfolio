@@ -31,7 +31,8 @@ export const config = {
             category: "Network Monitoring",
             technologies: "Python, FastAPI, Scapy, WebSockets, Vanilla JS",
             image: "/images/project-2.png",
-            description: "Built a packet inspection tool that reads .pcap files and identifies application traffic without decrypting it. Added a live dashboard streaming packet data under 1s latency and anomaly detection for traffic spikes."
+            description: "Built a packet inspection tool that reads .pcap files and identifies application traffic without decrypting it. Added a live dashboard streaming packet data under 1s latency and anomaly detection for traffic spikes.",
+            link: "https://huggingface.co/spaces/dhruvgupta780/DPI-Engine"
         },
         {
             id: 3,
