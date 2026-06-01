@@ -59,6 +59,20 @@ export const config = {
             link: "https://navgrahmandirdabra.netlify.app"
         }
     ],
+    experiences: [
+        {
+            company: "RGPV University",
+            position: "MCA Student",
+            period: "2025 - Present",
+            description: "Pursuing MCA, focusing on AI-driven systems and real-time backend architecture."
+        },
+        {
+            company: "ITM Gwalior",
+            position: "BCA Student",
+            period: "2022 - 2025",
+            description: "Graduated with 7.42 CGPA. Developed foundational skills in Python, web development, and networking."
+        }
+    ],
     contact: {
         email: "guptadhruv780@gmail.com",
         github: "https://github.com/guptadhruv780",
