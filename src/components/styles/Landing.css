@@ -128,8 +128,8 @@
     display: block;
     position: relative !important;
     width: 100%;
-    max-width: 380px;
-    margin: 0 auto;
+    max-width: 250px;
+    margin: 20px auto;
     z-index: 1;
     order: 2;
     /* Second: Photo */
