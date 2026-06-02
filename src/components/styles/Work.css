@@ -179,18 +179,23 @@
 
 @media only screen and (max-height: 900px) {
   .work-image img {
-    height: 250px;
+    height: 220px;
   }
 
   .work-box {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
   }
 
   .work-section h2 {
     font-size: 60px;
-    margin-bottom: 30px;
-    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  
+  .work-title {
+    margin-bottom: 10px;
   }
 }
 
