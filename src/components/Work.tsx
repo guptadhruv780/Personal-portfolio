@@ -2,15 +2,13 @@ import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { config } from "../config";
 import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Work = () => {
-  const [expandedProject, setExpandedProject] = useState<number | null>(null);
-
   useEffect(() => {
     // Disable pinning on mobile to allow scrolling
     if (window.innerWidth <= 768) return;
@@ -18,23 +16,16 @@ const Work = () => {
     let translateX: number = 0;
 
     function setTranslateX() {
-      try {
-        const box = document.getElementsByClassName("work-box");
-        if (box.length === 0) return;
-        const container = document.querySelector(".work-container");
-        if (!container) return;
-        const rectLeft = container.getBoundingClientRect().left;
-        const rect = box[0].getBoundingClientRect();
-        const parentWidth = box[0].parentElement?.getBoundingClientRect().width || 0;
-        let paddingStr = window.getComputedStyle(box[0]).padding;
-        let padding: number = parseInt(paddingStr);
-        if (isNaN(padding)) padding = 0;
-        translateX = rect.width * box.length - (rectLeft + parentWidth) + padding;
-        if (isNaN(translateX)) translateX = 0;
-      } catch (err) {
-        console.error("Error calculating translateX", err);
-        translateX = 0;
-      }
+      const box = document.getElementsByClassName("work-box");
+      if (box.length === 0) return;
+      const rectLeft = document
+        .querySelector(".work-container")!
+        .getBoundingClientRect().left;
+      const rect = box[0].getBoundingClientRect();
+      const parentWidth = box[0].parentElement!.getBoundingClientRect().width;
+      let padding: number =
+        parseInt(window.getComputedStyle(box[0]).padding) / 2;
+      translateX = rect.width * box.length - (rectLeft + parentWidth) + padding;
     }
 
     setTranslateX();
@@ -87,20 +78,10 @@ const Work = () => {
                 </div>
                 <h4>Tools and features</h4>
                 <p>{project.technologies}</p>
-                <div className="work-action-buttons">
-                  {(project as any).link && (
-                    <a href={(project as any).link} target="_blank" rel="noopener noreferrer" className="work-live-link-btn" data-cursor="disable">
-                      Link ↗
-                    </a>
-                  )}
-                  <button onClick={() => setExpandedProject(expandedProject === project.id ? null : project.id)} className="work-about-btn" data-cursor="disable">
-                    {expandedProject === project.id ? "Close" : "About Project"}
-                  </button>
-                </div>
-                {expandedProject === project.id && (
-                  <div className="work-project-description">
-                    <p>{project.description}</p>
-                  </div>
+                {(project as any).link && (
+                  <a href={(project as any).link} target="_blank" rel="noopener noreferrer" className="work-live-link-btn" data-cursor="disable">
+                    Link ↗
+                  </a>
                 )}
               </div>
               <WorkImage image={project.image} alt={project.title} link={(project as any).link} />
