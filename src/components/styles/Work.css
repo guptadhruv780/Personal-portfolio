@@ -40,7 +40,7 @@
   box-sizing: border-box;
   border-right: 1px solid #363636;
   flex-shrink: 0;
-  gap: 50px;
+  gap: 30px;
   justify-content: start;
 }
 
@@ -103,7 +103,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 15px;
   padding: 10px 25px;
   background-color: transparent;
   border: 1px solid var(--accentColor);
