@@ -2,13 +2,15 @@ import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { config } from "../config";
 import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Work = () => {
+  const [expandedProject, setExpandedProject] = useState<number | null>(null);
+
   useEffect(() => {
     // Disable pinning on mobile to allow scrolling
     if (window.innerWidth <= 768) return;
@@ -78,10 +80,20 @@ const Work = () => {
                 </div>
                 <h4>Tools and features</h4>
                 <p>{project.technologies}</p>
-                {(project as any).link && (
-                  <a href={(project as any).link} target="_blank" rel="noopener noreferrer" className="work-live-link-btn" data-cursor="disable">
-                    Link ↗
-                  </a>
+                <div className="work-action-buttons">
+                  {(project as any).link && (
+                    <a href={(project as any).link} target="_blank" rel="noopener noreferrer" className="work-live-link-btn" data-cursor="disable">
+                      Link ↗
+                    </a>
+                  )}
+                  <button onClick={() => setExpandedProject(expandedProject === project.id ? null : project.id)} className="work-about-btn" data-cursor="disable">
+                    {expandedProject === project.id ? "Close" : "About Project"}
+                  </button>
+                </div>
+                {expandedProject === project.id && (
+                  <div className="work-project-description">
+                    <p>{project.description}</p>
+                  </div>
                 )}
               </div>
               <WorkImage image={project.image} alt={project.title} link={(project as any).link} />
