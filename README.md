@@ -1,4 +1,4 @@
-# Dhruv Gupta - Personal Portfolio
+# Dhruv Gupta - Personal Portfolio.
 
 Welcome to my personal 3D portfolio website! I am a Python & Full-Stack Developer.
 
